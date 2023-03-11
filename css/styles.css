@@ -1,0 +1,100 @@
+* {
+ margin: 0;
+ padding: 0;
+ font-family: Helvetica, sans-serif;
+}
+
+body {
+ overflow-x: hidden;
+ background-color: black;
+}
+
+h1 {
+ font-size: 2rem;
+ color: white;
+ text-align: center;
+}
+
+p {
+ color: white;
+ padding-block: 1.5rem;
+ text-align: center;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+ width: 1em;
+}
+::-webkit-scrollbar-track {
+ background: black;
+ visibility: hidden;
+ margin-block: 0.5em;
+}
+::-webkit-scrollbar-thumb {
+ background: white;
+ border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover {
+ background: rgb(255, 0, 119);
+}
+
+/* first page */
+
+.main-page {
+ height: 100vh;
+ width: 100vw;
+ background-color: black;
+ position: relative;
+}
+.nav-button {
+ width: 3rem;
+ height: 1rem;
+ background-color: white;
+ position: absolute;
+ right: 10rem;
+ top: 7rem;
+ animation: slideMe 0.7s ease-in;
+}
+
+.nav-button:hover {
+ background-color: darkgray;
+}
+
+.main-heading {
+ font-size: 8em;
+ text-align: left;
+}
+
+
+
+#line {
+ position: absolute;
+ top: 28rem;
+}
+
+.half-section {
+ padding-inline: 6rem;
+ padding-block: 3rem;;
+ background-image: linear-gradient(45deg, red, purple, rgb(255, 0, 119));
+ position: relative;
+}
+
+.second-page {
+ height: 100vh;
+}
+
+.wrapper {
+ text-align: center;
+ padding-inline: 6rem;
+ padding-block: 3rem;;
+}
+
+@keyframes slideMe {
+ 0%{
+  transform: skewX(45deg) translateX(-30rem);
+ }
+ 100%{
+  transform: skew(0deg);
+ }
+}
